@@ -1,3 +1,3 @@
 # Sierpinski-triangle-in-C
-My firs programming project in C. A simple representation of the Sierpinski triangle fractal.
+My first programming project in C. A simple representation of the Sierpinski triangle fractal.
 ![Sierpinski triangle](/images/Sierpinski.png)
