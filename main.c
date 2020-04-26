@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define n_iter 9    /* Indicamos el numero de iteraciones del bucle principal, que nos determinara el numero
-                      de triangulos de nuestra figura. */
+                       de triangulos de nuestra figura. */
 
 #define lado 1     /* Definimos el tamano del triangulo equilatero a generar. */
 
