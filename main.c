@@ -90,7 +90,7 @@ int main(int argc, char**argv){
     int i;
     
     /* Abrimos e indicamos el path del fichero seguido del nombre que le otorgamos. */
-    fp = fopen("/Users/jaime/Documents/Proyectos/Sierpinski/triangulos.dat", "w");
+    fp = fopen("/Users/jaime/Documents/Proyectos/sierpinski/triangulos.dat", "w");
     
     /* Con este bucle y la funcion "fprintf" escribimos sobre el archivo .dat creado. */
     for(i=0; i<tam; i++){
