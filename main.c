@@ -38,12 +38,12 @@ int main(int argc, char**argv){
     trian[0].yc = lado * (sqrt(3)/2);
     
     for (it=1; it<=n_iter; it++){     /* Generamos un bucle con la variable "it" como contador, que va desde uno hasta el numero de
-                                        iteraciones indicado. */
+                                         iteraciones indicado. */
         n_triangulos = pow(3, it);
         
         for (z=0; z<pow(3,it-1); z++){   /* En cada iteracion de este bucle, se guarda el nuevo struct creado en el bucle anidado
-                                           sobre el llamado "antiguo", para que en la siguiente iteracion se trabaje sobre este
-                                           y no siempre sobre el primero. */
+                                            sobre el llamado "antiguo", para que en la siguiente iteracion se trabaje sobre este
+                                            y no siempre sobre el primero. */
             trian_antiguo[z] = trian[z];
         }
         
