@@ -7,14 +7,14 @@
 
 #define lado 1     /* Definimos el tamano del triangulo equilatero a generar. */
 
-struct Triangulo{  /* Creamos una estructura con las coordenadas x e y de cada vertice del triangulo, un total de
+struct Triangulo {  /* Creamos una estructura con las coordenadas x e y de cada vertice del triangulo, un total de
                       seis variables. */
     float xa, ya;
     float xb, yb;
     float xc, yc;
 };
 
-int main(int argc, char**argv){
+int main(int argc, char**argv) {
     
     int tam = pow(3, n_iter); /* Creamos una variable de tipo entero que contiene el numero total de triangulos de nuestra
                                  figura, que es tres elevado al numero de iteraciones, es decir, el numero de triangulos aumenta
@@ -37,18 +37,18 @@ int main(int argc, char**argv){
     trian[0].xc = lado * 0.5;
     trian[0].yc = lado * (sqrt(3)/2);
     
-    for (it=1; it<=n_iter; it++){     /* Generamos un bucle con la variable "it" como contador, que va desde uno hasta el numero de
+    for (it=1; it<=n_iter; it++) {     /* Generamos un bucle con la variable "it" como contador, que va desde uno hasta el numero de
                                          iteraciones indicado. */
         n_triangulos = pow(3, it);
         
-        for (z=0; z<pow(3,it-1); z++){   /* En cada iteracion de este bucle, se guarda el nuevo struct creado en el bucle anidado
+        for (z=0; z<pow(3,it-1); z++) {   /* En cada iteracion de este bucle, se guarda el nuevo struct creado en el bucle anidado
                                             sobre el llamado "antiguo", para que en la siguiente iteracion se trabaje sobre este
                                             y no siempre sobre el primero. */
             trian_antiguo[z] = trian[z];
         }
         
         /* Aplicamos la transformacion a todos los trians existentes. */
-        for (n=0; n<(n_triangulos)/3; n++){
+        for (n=0; n<(n_triangulos)/3; n++) {
             
             /* Estas tres variables de tipo entero indican cada uno de los subtriangulos generados en cada iteracion. */
             q = 3 * n;
@@ -93,7 +93,7 @@ int main(int argc, char**argv){
     fp = fopen("/Users/jaime/Documents/Proyectos/sierpinski/triangulos.dat", "w");
     
     /* Con este bucle y la funcion "fprintf" escribimos sobre el archivo .dat creado. */
-    for (i=0; i<tam; i++){
+    for (i=0; i<tam; i++) {
         
         fprintf(fp, "%g\t%g\n%g\t%g\n%g\t%g\n%g\t%g\n\n", trian[i].xa, trian[i].ya, trian[i].xb, trian[i].yb, trian[i].xc,
                 trian[i].yc, trian[i].xa,trian[i].ya);
