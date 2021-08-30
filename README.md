@@ -3,4 +3,4 @@ My first programming project in C. A simple representation of the Sierpinski tri
 
 The program generates a data file (*triangulos.dat*) that can be displayed with Gnuplot (*“plot 'path_data\triangulos.dat' with lines”*).
 
-![Sierpinski triangle](/images/Sierpinski.png)
+![Sierpinski triangle](/img/Sierpinski.png)
